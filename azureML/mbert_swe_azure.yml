@@ -1,0 +1,15 @@
+name: mbert_swe_azure
+channels:
+    - defaults
+    - pytorch
+dependencies:
+    - python=3.6.2
+    - pytorch=1.5.0
+    - torchvision
+    - pip
+    - pip:
+        - azureml-sdk
+        - datasets==1.18.3
+        - transformers==4.16.2
+        - seqeval==1.2.2
+        - git+https://github.com/AddedK/TextBrewer@master#egg=textbrewer
